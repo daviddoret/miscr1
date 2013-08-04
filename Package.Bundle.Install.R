@@ -7,6 +7,12 @@ if(!require(devtools)){
 }
 if(require(devtools)){
  devtools::install_github() 
+
+ #for compile binaries install :
+#   install.packages('xxx', repo='http://repo_adress')
+# for source install :
+#   install.packages('xxx', repo='http://repo_adress', type='source')
+ 
 }
 else
 {
