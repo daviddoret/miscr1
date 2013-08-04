@@ -1,0 +1,8 @@
+Package: miscr1
+Title: Miscellany R works
+Description: Various R functions and scripts written during my studies and sudden bursts of interest for varying topics
+Version: 0.1
+Author: David Doret <david.doret@me.com>
+Maintainer: David Doret <david.doret@me.com>
+License: GPL-3
+URL: https://github.com/daviddoret/miscr1
