@@ -27,8 +27,8 @@ if(require(devtools)){
   
   # First, build the development version,
   # in R these are named "bundles".
-  #devtools::build(path = package.path,
-  #                binary = FALSE)  
+  devtools::build(path = package.path,
+                  binary = FALSE)  
 
   # Then, build the binary version,
   # for non-developers.
