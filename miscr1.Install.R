@@ -7,7 +7,7 @@
 miscr1.install <- function(){
 
   install.binary <- function(){
-    install.packages(pkgs="miscr1",repos="https://github.com/daviddoret/miscr1/raw/master/Package/miscr1.tgz")
+    install.packages(pkgs="miscr1",repos="https://github.com/daviddoret/miscr1/raw/master/Package/miscr1_latestversion.tgz")
   }
   install.source <- function(){
   # Check if "devtools" is installed.
@@ -27,4 +27,5 @@ miscr1.install <- function(){
   }
   }
 }
+
 
