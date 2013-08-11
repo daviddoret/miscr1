@@ -6,8 +6,22 @@
 
 miscr1.install <- function(){
 
+  #TODO: check and install RCurlr
+  
   install.binary <- function(){
-    install.packages(pkgs="miscr1",repos="https://github.com/daviddoret/miscr1/raw/master/Package/miscr1_latestversion.tgz")
+    
+    # TODO: url.exists("https://sourceforge.net/"))
+    
+    #install.packages(pkgs="miscr1",repos="https://github.com/daviddoret/miscr1/raw/master/Package/miscr1_latestversion.tgz")
+    #local.path <- tempfile(pattern = "file", tmpdir = tempdir())
+    local.path <- paste0(tempdir(),
+                         "/miscr1.tgz")
+    package <- getBinaryURL(url = "https://github.com/daviddoret/miscr1/raw/master/Package/miscr1_latestversion.tgz",
+           ssl.verifypeer = FALSE)
+    write(x = package, file = local.path)
+    install.packages(pkgs = local.path,
+                     repos = NULL,
+                     type = "source")
   }
   install.source <- function(){
   # Check if "devtools" is installed.
