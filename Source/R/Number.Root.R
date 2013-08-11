@@ -4,7 +4,7 @@ Number.Root <- function(radicant,
   # It is surprising that R does not provide natively a root
   # function. A root function seems more intuitive in certain
   # situations than a 1/n exponent, even though the two are
-  # equivalent.
+  # equivalent. 
   #
   # TODO: Handle with elegance the case when there are
   #       multiple roots.
